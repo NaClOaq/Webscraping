@@ -21,7 +21,7 @@ Object.keys(carset).forEach(function(element){
 });
 
 // getFoo は列挙可能ではないプロパティです
-var my_obj = Object.create({}, { getFoo : { value : function () { return this.foo } } });
+var my_obj = Object.create({}, { getFoo : { value : function () { return this.foo; } } });
 my_obj.foo = 1;
 
 console.log(Object.keys(my_obj)); // foo のみがアラート表示されるでしょう
